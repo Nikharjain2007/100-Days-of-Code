@@ -1,0 +1,16 @@
+//Q99: Change the date format from dd/04/yyyy to dd-Apr-yyyy.
+
+
+#include <stdio.h>
+
+int main() {
+    char dd[3], mm[3], yyyy[5];
+
+    scanf("%2s/%2s/%4s", dd, mm, yyyy);
+
+    char month[4] = "Apr";
+
+    printf("%s-%s-%s", dd, month, yyyy);
+
+    return 0;
+}
